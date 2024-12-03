@@ -3,5 +3,9 @@
     "component": "OrderSlider",
     "composition": "children",
     "allowed": "*"
+  },
+  "order-place-header": {
+    "component": "OrderPlacedHeader",
+    "composition": "children"
   }
 }

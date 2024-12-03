@@ -2,5 +2,9 @@
   "order-slider": {
     "component": "OrderSlider",
     "composition": "children"
+  },
+  "order-place-header":{
+    "component": "OrderPlacedHeader",
+    "composition": "children"
   }
 }

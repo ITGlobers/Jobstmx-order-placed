@@ -1,6 +1,7 @@
 {
   "order-slider": {
     "component": "OrderSlider",
-    "composition": "children"
+    "composition": "children",
+    "allowed": "*"
   }
 }

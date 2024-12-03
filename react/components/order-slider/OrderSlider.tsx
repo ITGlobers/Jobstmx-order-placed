@@ -1,16 +1,32 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import { OrderContext } from 'vtex.order-placed'
+import { ListContextProvider, useListContext } from "vtex.list-context"
+import { useCssHandles } from "vtex.css-handles"
+import ItemCardMap from './ItemCardMap'
 
+interface Props {
+  children: any
+}
 
-const OrderSlider = () => {
+const CSS_HANDLES = ['products-section', 'products-section__title'] as const
+const OrderSlider = ({ children }: PropsWithChildren<Props>) => {
+  const { useOrder } = OrderContext
+  const { items } = useOrder()
+  const { handles } = useCssHandles(CSS_HANDLES)
 
-  console.log(OrderContext, 'CONTEXTO DE ORDER')
+  const { list } = useListContext() || []
+  const itemListCard = ItemCardMap(items)
+  const itemsList = list.concat(itemListCard)
+
   return (
-    <div>
-      <h1>
-        Order Slider
-      </h1>
-    </div>
+    <ListContextProvider list={itemsList}>
+      <div className={handles['products-section']}>
+        <h2 className={handles['products-section__title']}>
+          Resumen de pedido
+        </h2>
+        {children}
+      </div>
+    </ListContextProvider>
   )
 }
 

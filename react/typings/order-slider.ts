@@ -1,0 +1,20 @@
+export interface OrderItem {
+  id: string;
+  skuName: string;
+  name: string;
+  productId: string;
+  price: number;
+  sellingPrice: number;
+  listPrice: number;
+  isGift: boolean;
+  parentItemIndex: number | null;
+  quantity: number;
+  attachments: any[];
+  bundleItems: any[];
+  seller: string;
+  imageUrl: string;
+  detailUrl: string;
+  measurementUnit: string;
+  unitMultiplier: number;
+  __typename: string;
+};

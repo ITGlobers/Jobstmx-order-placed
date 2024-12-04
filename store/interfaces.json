@@ -7,5 +7,9 @@
   "order-place-header": {
     "component": "OrderPlacedHeader",
     "composition": "children"
+  },
+  "order-place-details": {
+    "component": "OrderPlacedDetails",
+    "composition": "children"
   }
 }

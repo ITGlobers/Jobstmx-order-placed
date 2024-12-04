@@ -13,7 +13,7 @@
   width: 336px;
 }
 .order-placed-header__confirmations-title p{
-  font-family: 'BwModelicaLGC-Regular';
+  font-family: 'bw-modelica';/*regular*/
   font-size: 20px;
   font-weight: 600;
   color: #242424;
@@ -21,7 +21,7 @@
   margin-bottom: 16px;
 }
 .order-placed-header__confirmations-text p{
-  font-family: 'BwModelicaLGC-Regular';
+  font-family: 'bw-modelica';
   font-size: 14px;
   font-weight: 500;
   color: #242424;
@@ -41,7 +41,7 @@
   line-height: 40px;
   text-align: center;
   text-decoration: none;
-  font-family: 'BwModelicaLGC-Regular';
+  font-family: 'bw-modelica';
   font-size: 14px;
   font-weight: 600;
 }

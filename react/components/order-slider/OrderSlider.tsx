@@ -22,7 +22,7 @@ const OrderSlider = ({ children }: PropsWithChildren<Props>) => {
     <ListContextProvider list={itemsList}>
       <div className={handles['products-section']}>
         <h2 className={handles['products-section__title']}>
-          Resumen de pedido
+          Resumen del pedido
         </h2>
         {children}
       </div>

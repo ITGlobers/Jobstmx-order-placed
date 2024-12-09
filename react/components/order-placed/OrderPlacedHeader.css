@@ -1,6 +1,9 @@
 .order-placed-header{
   width: 272px;
   margin: 0 auto;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #E0E0E0;
   justify-content: space-around;
 }
 .order-placed-header__image{
@@ -29,7 +32,7 @@
   margin-bottom: 16px;
 }
 .order-placed-header__confirmations-button{
-
+  margin-bottom: 16px;
 }
 .order-placed-header__confirmations-link{
   display: block;
@@ -45,14 +48,20 @@
   font-size: 14px;
   font-weight: 600;
 }
+@media (min-width: 768px) {
+  .order-placed-header{
+    display: flex;
+  }
+}
 
 @media (min-width: 1025px) {
   .order-placed-header{
     width: 792px;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 16px 40px;
+    margin: 0;
+    border: none;
   }
   .order-placed-header__image{
     margin: 0;

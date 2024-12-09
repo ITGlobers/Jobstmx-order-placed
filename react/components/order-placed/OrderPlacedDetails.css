@@ -40,7 +40,7 @@
 }
 
 .order-placed-details__main-shipping span {
-  width: 147px;
+  /*width: 147px;*/
 }
 
 /* Desktop */
@@ -59,7 +59,7 @@
   }
 
   .order-placed-details__main-shipping span {
-    width: 602px;
+    /* width: 602px; */
   }
 
   .order-placed-details__separate {

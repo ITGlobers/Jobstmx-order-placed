@@ -1,0 +1,18 @@
+.order-header{
+  background-color: #ffffff;
+  padding-bottom: 10px;
+}
+.order-header img{
+  width: 57px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+  .order-header{
+    padding-bottom: 20px;
+  }
+  .order-header img{
+    width: 121px;
+  }
+}

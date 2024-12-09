@@ -38,15 +38,33 @@ const OrderPlacedDetails = () => {
     }).format(value / 100);
   };
 
+  // Mapeo de métodos de pago
+  const paymentMethodMap = {
+    Vale: "efectivo",
+    DeunaNow: "Tarjeta débito - crédito",
+    PayPalCheckout: "Pay Pal",
+    "Mercado Pago": "Mercado Pago",
+    Fintoc: "Pago por transferencia",
+    "Pago en Tienda": "Efectivo"
+  };
+
+  // Definir el tipo de los métodos de pago
+  type PaymentMethodKey = keyof typeof paymentMethodMap;
+
   // Extraer datos
   const creationDate = formatDate(order.creationDate);
   const totalValue = formatPrice(order.value);
-  const paymentMethod = order.paymentData.transactions[0]?.payments[0]?.paymentSystemName || 'No especificado';
+  let paymentMethod = order.paymentData.transactions[0]?.payments[0]?.paymentSystemName || 'No especificado';
   const receiverName = order.deliveryParcels[0]?.address?.receiverName || 'No especificado';
   const address = order.deliveryParcels[0]?.address;
   const formattedAddress = address
     ? `${address.street} ${address.number}, ${address.neighborhood}, ${address.postalCode}, ${address.city}, ${address.state}`
     : 'Dirección no especificada';
+
+  // Ajustar el método de pago con el mapeo
+  if (paymentMethod !== 'No especificado') {
+    paymentMethod = paymentMethodMap[paymentMethod as PaymentMethodKey] || paymentMethod;
+  }
 
   return (
     <div className={handles['order-placed-details']}>

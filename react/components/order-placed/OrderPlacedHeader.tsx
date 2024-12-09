@@ -33,7 +33,7 @@ const OrderPlacedHeader = () => {
     description = "Recuerda realizar el pago de tu pedido antes del 12-10-2024, sino será cancelado.";
   } else {
     title = "¡Gracias por tu compra!";
-    description = "No te pierdas nuestras últimas ofertas y novedades. Explorar productos";
+    description = "No te pierdas nuestras últimas ofertas y novedades. ";
   }
 
   return (
@@ -50,7 +50,7 @@ const OrderPlacedHeader = () => {
           <p>{title}</p>
         </div>
         <div className={handles['order-placed-header__confirmations-text']}>
-          <p>{description}</p>
+          <p>{description}<a href=''>Explorar productos</a></p>
         </div>
         {paymentMethod != 'Pago en Tienda' ? (
           <div className={handles['order-placed-header__confirmations-button']}>

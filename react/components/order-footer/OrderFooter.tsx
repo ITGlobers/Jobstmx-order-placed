@@ -28,10 +28,10 @@ const OrderFooter = () => {
         </div>
 
         <div className={handles['order-footer__wrapper-networks']}>
-          <a href='https://www.facebook.com/TenaBienEstar'><img src="/arquivos/Facebook.png" width="12" alt="" /></a>
-          <a href='https://www.instagram.com/masvivas/'><img src="/arquivos/Instagram.png" width="30" alt="" /></a>
-          <a href=''><img src="/arquivos/twiter.png" width="26" alt="" /></a>
-          <a href='https://www.youtube.com/channel/UC0HCMvbKjfj0cnpEalVlG2w'><img src="/arquivos/youtube.png" width="26" alt="" /></a>
+          <a href='https://www.facebook.com/TenaBienEstar'><img src="/arquivos/faceboock-op.png" width="12" alt="" /></a>
+          <a href='https://www.instagram.com/masvivas/'><img src="/arquivos/instagram-op.png" width="30" alt="" /></a>
+          <a href=''><img src="/arquivos/twiter-op.png" width="26" alt="" /></a>
+          <a href='https://www.youtube.com/channel/UC0HCMvbKjfj0cnpEalVlG2w'><img src="/arquivos/youtobe-op.png" width="26" alt="" /></a>
         </div>
 
 

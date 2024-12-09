@@ -31,6 +31,9 @@
   line-height: 22px;
   margin-bottom: 16px;
 }
+.order-placed-header__confirmations-text a{
+  color:#102E78
+}
 .order-placed-header__confirmations-button{
   margin-bottom: 16px;
 }

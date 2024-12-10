@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+.order-placed-details {
+  width: 272px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.order-placed-details__header-payment,
+.order-placed-details__main-shipping {
+  font-family: 'bw-modelica-medium';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #242424;
+}
+
+.order-placed-details__separate {
+  display: block;
+  margin: 8px 10px;
+  border: none;
+  height: 1px;
+  background-color: #E0E0E0;
+}
+
+.order-placed-details__header-payment span,
+.order-placed-details__main-shipping span {
+  font-family: 'bw-modelica';
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.order-placed-details__main {}
+
+.order-placed-details__main-shipping {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.order-placed-details__main-shipping span {
+  /*width: 147px;*/
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .order-placed-details {
+    width: 792px !important;
+    margin: 16px auto 112px;
+    padding: 16px 32px;
+    border-radius: 8px;
+  }
+
+  .order-placed-details__header-payment,
+  .order-placed-details__main-shipping {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .order-placed-details__main-shipping span {
+    /* width: 602px; */
+  }
+
+  .order-placed-details__separate {
+    margin: 24px 10px;
+  }
+}

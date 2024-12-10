@@ -1,6 +1,23 @@
 {
+  "order-header": {
+    "component": "OrderHeader",
+    "composition": "children"
+  },
   "order-slider": {
     "component": "OrderSlider",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "order-place-header": {
+    "component": "OrderPlacedHeader",
+    "composition": "children"
+  },
+  "order-place-details": {
+    "component": "OrderPlacedDetails",
+    "composition": "children"
+  },
+  "order-footer": {
+    "component": "OrderFooter",
     "composition": "children"
   }
 }

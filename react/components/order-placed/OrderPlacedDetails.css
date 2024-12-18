@@ -2,7 +2,8 @@
 
 .order-placed-details {
   width: 272px;
-  margin: 40px auto;
+  margin-top: 16px;
+  margin-bottom: 40px;
   padding: 32px 24px;
   background-color: #ffffff;
   border-radius: 30px;
@@ -34,10 +35,10 @@
 
 .order-placed-details__main {}
 
-.order-placed-details__main-shipping {
+/* .order-placed-details__main-shipping {
   display: flex;
   justify-content: flex-start;
-}
+} */
 
 .order-placed-details__main-shipping span {
   /*width: 147px;*/
@@ -47,7 +48,7 @@
 @media (min-width: 1025px) {
   .order-placed-details {
     width: 792px !important;
-    margin: 16px auto 112px;
+    margin-bottom: 80px;
     padding: 16px 32px;
     border-radius: 8px;
   }

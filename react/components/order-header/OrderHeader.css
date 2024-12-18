@@ -1,6 +1,6 @@
 .order-header{
+  height: 52px;
   background-color: #ffffff;
-  padding-bottom: 10px;
 }
 .order-header img{
   width: 57px;
@@ -10,9 +10,11 @@
 
 @media (min-width: 1025px) {
   .order-header{
+    height: auto;
     padding-bottom: 20px;
   }
   .order-header img{
     width: 121px;
+    height: 81px;
   }
 }

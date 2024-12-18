@@ -54,7 +54,7 @@ const OrderPlacedHeader = () => {
         </div>
         {paymentMethod != 'Pago en Tienda' ? (
           <div className={handles['order-placed-header__confirmations-button']}>
-            <a className={handles['order-placed-header__confirmations-link']} href='#'>
+            <a className={handles['order-placed-header__confirmations-link']} href='/login'>
               Ver estatus de mi pedido
             </a>
           </div>

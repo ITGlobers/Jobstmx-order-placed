@@ -50,7 +50,7 @@ const OrderPlacedHeader = () => {
           <p>{title}</p>
         </div>
         <div className={handles['order-placed-header__confirmations-text']}>
-          <p>{description}<a href=''>Explorar productos</a></p>
+          <p>{description}<a href='https://www.saba.com.mx/comprar-productos/productos-saba/'>Explorar productos</a></p>
         </div>
         {paymentMethod != 'Pago en Tienda' ? (
           <div className={handles['order-placed-header__confirmations-button']}>

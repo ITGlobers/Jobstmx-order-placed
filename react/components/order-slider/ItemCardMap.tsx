@@ -1,6 +1,8 @@
 import React from 'react'
 import { OrderItem } from '../../typings/order-slider'
 import { useCssHandles } from 'vtex.css-handles'
+import ProductCard from './ProductCard'
+
 
 const CSS_HANDLES = [
   "product-card",
@@ -17,22 +19,11 @@ const ItemCardMap = (items: OrderItem[]) => {
 
   const listItemsMapped = items?.map((item, index) => {
 
-    const { imageUrl, quantity, name } = item
+    const { imageUrl, quantity, name, detailUrl } = item
 
     return (
       <div className={handles['product-card']} key={index}>
-        <div className={handles['product-card__image-container']}>
-          <img className={handles['product-card__image']} src={imageUrl} alt={name} />
-        </div>
-        <div className={handles['product-card__info']}>
-          <div className={handles['product-card__name']}>
-            {name}
-          </div>
-          <div className={handles['product-card__quantity']}>
-            <span className={handles['product-card__quantity-label']}>Cantidad:</span>
-            <span className={handles['product-card__quantity-value']}>{quantity}</span>
-          </div>
-        </div>
+        <ProductCard imageUrl={imageUrl} quantity={quantity} name={name} detailUrl={detailUrl} />
       </div>
     )
   })

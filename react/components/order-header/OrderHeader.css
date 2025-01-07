@@ -10,7 +10,7 @@
 
 @media (min-width: 1025px) {
   .order-header{
-    height: auto;
+    height: 105px;
   }
   .order-header img{
     width: 121px;

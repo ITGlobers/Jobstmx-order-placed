@@ -20,7 +20,8 @@
 .order-footer__wrapper-networks{
   display: flex;
   align-items: center;
-  margin-bottom: 26px;
+  margin-top: 24px;
+  /* margin-bottom: 26px; */
 }
 .order-footer__wrapper-networks a{
   display: flex;
@@ -46,6 +47,7 @@
   }
   .order-footer__wrapper-networks{
     margin-bottom: initial;
+    margin-top: initial;
   }
 
 }

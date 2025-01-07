@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from 'react'
 import { OrderContext } from 'vtex.order-placed'
 import { ListContextProvider, useListContext } from "vtex.list-context"
+
 import { useCssHandles } from "vtex.css-handles"
 import ItemCardMap from './ItemCardMap'
 
@@ -8,11 +9,16 @@ interface Props {
   children: any
 }
 
+
 const CSS_HANDLES = ['products-section', 'products-section__title'] as const
 const OrderSlider = ({ children }: PropsWithChildren<Props>) => {
   const { useOrder } = OrderContext
   const { items } = useOrder()
+
+  console.log('ITEMS', items)
+
   const { handles } = useCssHandles(CSS_HANDLES)
+
 
   const { list } = useListContext() || []
   const itemListCard = ItemCardMap(items)
@@ -27,6 +33,7 @@ const OrderSlider = ({ children }: PropsWithChildren<Props>) => {
         {children}
       </div>
     </ListContextProvider>
+
   )
 }
 

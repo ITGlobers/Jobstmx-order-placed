@@ -13,7 +13,8 @@
   width: 209px;
 }
 .order-placed-header__confirmations{
-  width: 336px;
+  width: 100%;
+  max-width: 336px;
 }
 .order-placed-header__confirmations-title p{
   font-family: 'bw-modelica';/*regular*/

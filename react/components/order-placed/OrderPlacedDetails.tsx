@@ -14,6 +14,7 @@ const CSS_HANDLES = [
 
 const OrderPlacedDetails = () => {
   const order = useOrder(); // Se asume que esto devuelve directamente los datos de la orden
+
   const { handles } = useCssHandles(CSS_HANDLES);
 
   if (!order) {

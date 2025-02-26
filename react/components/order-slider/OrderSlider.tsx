@@ -13,9 +13,10 @@ interface Props {
 const CSS_HANDLES = ['products-section', 'products-section__title'] as const
 const OrderSlider = ({ children }: PropsWithChildren<Props>) => {
   const { useOrder } = OrderContext
-  const { items } = useOrder()
+  const { orderId, items } = useOrder()
 
-  console.log('ITEMS', items)
+  // console.log('ITEMS', items)
+  console.log('ORDER ID', orderId)
 
   const { handles } = useCssHandles(CSS_HANDLES)
 
@@ -28,7 +29,7 @@ const OrderSlider = ({ children }: PropsWithChildren<Props>) => {
     <ListContextProvider list={itemsList}>
       <div className={handles['products-section']}>
         <h2 className={handles['products-section__title']}>
-          Resumen del pedido
+          Resumen del pedido #{orderId}
         </h2>
         {children}
       </div>

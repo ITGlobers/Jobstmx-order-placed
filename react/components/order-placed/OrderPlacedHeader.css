@@ -17,7 +17,7 @@
   max-width: 336px;
 }
 .order-placed-header__confirmations-title p{
-  font-family: 'bw-modelica';/*regular*/
+  font-family: 'Interstate Regular';
   font-size: 20px;
   font-weight: 600;
   color: #242424;
@@ -25,7 +25,7 @@
   margin-bottom: 16px;
 }
 .order-placed-header__confirmations-text p{
-  font-family: 'bw-modelica';
+  font-family: 'Interstate Regular';
   font-size: 14px;
   font-weight: 500;
   color: #242424;
@@ -39,16 +39,18 @@
   margin-bottom: 16px;
 }
 .order-placed-header__confirmations-link{
-  display: block;
+  font-family: 'Interstate Regular' !important;
+  display: flex;
+  justify-content: center;
+    align-items: center;
   width: 213px;
   height: 40px;
   color: #ffffff;
   background-color: #001E62;
-  border-radius: 50px;
+  border-radius: 4px;
   line-height: 40px;
   text-align: center;
   text-decoration: none;
-  font-family: 'bw-modelica';
   font-size: 14px;
   font-weight: 600;
 }
@@ -76,12 +78,12 @@
   }
   .order-placed-header__confirmations-title p{
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 44px;
   }
   .order-placed-header__confirmations-text p{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 24px;
     margin-bottom: 16px;
   }
@@ -89,11 +91,10 @@
 
   }
   .order-placed-header__confirmations-link{
-    display: block;
-    width: 281px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 18px;
-    font-weight: 500;
+    width: 283px;
+    height: 56px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 400;
   }
 }

@@ -11,9 +11,9 @@
 
 .order-placed-details__header-payment,
 .order-placed-details__main-shipping {
-  font-family: 'bw-modelica-medium';
+  font-family: 'Interstate Regular' !important;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 22px;
   color: #242424;
 }
@@ -28,7 +28,7 @@
 
 .order-placed-details__header-payment span,
 .order-placed-details__main-shipping span {
-  font-family: 'bw-modelica';
+  font-family: 'Interstate Regular';;
   font-weight: 500;
   margin-left: 3px;
 }

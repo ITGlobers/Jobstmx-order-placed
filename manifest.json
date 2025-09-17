@@ -1,7 +1,7 @@
 {
-  "vendor": "sabamx",
+  "vendor": "jobstmx",
   "name": "order-place-components",
-  "version": "0.0.8",
+  "version": "0.0.1",
   "title": "Order Place Components",
   "description": "Componentes custom para el order-place",
   "builders": {

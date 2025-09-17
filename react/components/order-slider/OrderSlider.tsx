@@ -5,6 +5,8 @@ import { ListContextProvider, useListContext } from "vtex.list-context"
 import { useCssHandles } from "vtex.css-handles"
 import ItemCardMap from './ItemCardMap'
 
+import './orderSlider.css';
+
 interface Props {
   children: any
 }

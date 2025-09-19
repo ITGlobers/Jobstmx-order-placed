@@ -1,5 +1,5 @@
 .products-section__title{
-    font-family: 'Interstate Regular';
+    font-family: 'Interstate Regular' !important;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 24px !important;
 }

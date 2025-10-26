@@ -140,11 +140,11 @@ const OrderPlacedHeader = () => {
           <p>{title}</p>
         </div>
         <div className={handles['order-placed-header__confirmations-text']}>
-          <p>{description}<a href='https://www.saba.com.mx/comprar-productos/productos-saba/'>Explorar productos</a></p>
+          <p>{description}<a href='https://tienda.jobst-mx.com/medias-y-calcetines-de-compresion/'>Explorar productos</a></p>
         </div>
         {paymentMethod != 'Pago en Tienda' ? (
           <div className={handles['order-placed-header__confirmations-button']}>
-            <a className={handles['order-placed-header__confirmations-link']} href='https://www.intimawear.saba.com.mx/login'>
+            <a className={handles['order-placed-header__confirmations-link']} href='https://tienda.jobst-mx.com/account#/orders'>
               Ver estatus de mi pedido
             </a>
           </div>

@@ -1,5 +1,16 @@
-.products-section__title{
-    font-family: 'Interstate Regular' !important;
+.products-section__title {
+  font-family: 'Interstate Regular' !important;
+  font-weight: 400;
+  font-size  : 16px;
+}
+
+@media screen and (min-width:1025px) {
+  .products-section__title {
+    width      : initial;
+    font-size  : 24px !important;
     font-weight: 400;
-    font-size: 24px !important;
+    line-height: 32px !important;
+    text-align : left;
+    color      : #242424;
+  }
 }

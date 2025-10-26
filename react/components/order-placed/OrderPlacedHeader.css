@@ -1,100 +1,115 @@
-.order-placed-header{
-  width: 272px;
-  margin: 0 auto;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #E0E0E0;
+.order-placed-header {
+  width          : 272px;
+  margin         : 0 auto;
+  padding-bottom : 10px;
+  margin-bottom  : 10px;
+  border-bottom  : 1px solid #E0E0E0;
   justify-content: space-around;
 }
-.order-placed-header__image{
+
+.order-placed-header__image {
   margin-top: 40px;
 }
-.order-placed-header__img{
+
+.order-placed-header__img {
   width: 209px;
 }
-.order-placed-header__confirmations{
-  width: 100%;
+
+.order-placed-header__confirmations {
+  width    : 100%;
   max-width: 336px;
 }
-.order-placed-header__confirmations-title p{
-  font-family: 'Interstate Regular';
-  font-size: 20px;
-  font-weight: 600;
-  color: #242424;
-  line-height: 32px;
+
+.order-placed-header__confirmations-title p {
+  font-family  : 'Interstate Regular';
+  font-size    : 24px;
+  font-weight  : 400;
+  color        : #242424;
+  line-height  : 32px;
+  margin-bottom: 8px;
+}
+
+.order-placed-header__confirmations-text p {
+  font-family  : 'Interstate Regular';
+  font-size    : 14px;
+  font-weight  : 500;
+  color        : #242424;
+  line-height  : 22px;
   margin-bottom: 16px;
 }
-.order-placed-header__confirmations-text p{
-  font-family: 'Interstate Regular';
-  font-size: 14px;
-  font-weight: 500;
-  color: #242424;
-  line-height: 22px;
+
+.order-placed-header__confirmations-text a {
+  color: #102E78
+}
+
+.order-placed-header__confirmations-button {
   margin-bottom: 16px;
 }
-.order-placed-header__confirmations-text a{
-  color:#102E78
-}
-.order-placed-header__confirmations-button{
-  margin-bottom: 16px;
-}
-.order-placed-header__confirmations-link{
-  font-family: 'Interstate Regular' !important;
-  display: flex;
-  justify-content: center;
-    align-items: center;
-  width: 213px;
-  height: 40px;
-  color: #ffffff;
+
+.order-placed-header__confirmations-link {
+  font-family     : 'Interstate Regular' !important;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  width           : fit-content;
+  color           : #ffffff;
   background-color: #001E62;
-  border-radius: 4px;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
+  border-radius   : 4px;
+  line-height     : 1;
+  text-align      : center;
+  text-decoration : none;
+  font-size       : 14px;
+  font-weight     : 400;
+  padding         : 13.5px 25px;
 }
+
 @media (min-width: 768px) {
-  .order-placed-header{
+  .order-placed-header {
     display: flex;
   }
 }
 
 @media (min-width: 1025px) {
-  .order-placed-header{
-    width: 792px !important;
+  .order-placed-header {
+    width      : 792px !important;
     align-items: center;
-    margin: 0;
-    margin-top: 80px;
+    margin     : 0;
+    margin-top : 80px;
   }
-  .order-placed-header__image{
+
+  .order-placed-header__image {
     margin: 0;
   }
-  .order-placed-header__img{
+
+  .order-placed-header__img {
     width: 368px;
   }
-  .order-placed-header__confirmations{
+
+  .order-placed-header__confirmations {
     width: 336px;
   }
-  .order-placed-header__confirmations-title p{
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 44px;
-  }
-  .order-placed-header__confirmations-text p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+
+  .order-placed-header__confirmations-title p {
+    font-size    : 36px;
+    font-weight  : 400;
+    line-height  : 44px;
     margin-bottom: 16px;
   }
-  .order-placed-header__confirmations-button{
 
+  .order-placed-header__confirmations-text p {
+    font-size    : 16px;
+    font-weight  : 400;
+    line-height  : 24px;
+    margin-bottom: 16px;
   }
-  .order-placed-header__confirmations-link{
-    width: 283px;
-    height: 56px;
+
+  .order-placed-header__confirmations-button {}
+
+  .order-placed-header__confirmations-link {
+    width      : 283px;
+    height     : 56px;
     line-height: 16px;
-    font-size: 16px;
+    font-size  : 16px;
     font-weight: 400;
   }
 }
